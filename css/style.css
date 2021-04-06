@@ -1,0 +1,76 @@
+body {
+    height: 100%;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input, button {
+    padding: 5px;
+}
+
+#section0 input,button{
+    background-color: #e7d9ea;
+}
+
+#section1 input{
+    background-color: #fde8cd;
+}
+
+table {
+    width: 75%;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+    color: rgba(0,0,0,0.8);
+}
+
+table, th, td {
+    border: 1px solid #341677;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    background-color: #e7d9ea;
+}
+
+
+.countdown div{
+    display: inline-block;
+    line-height: 1;
+    padding: 20px;
+    color: rgba(0,0,0,0.8);
+}
+
+#timer{
+    font-size: 40px;
+}
+
+span {
+    display: block;
+    font-size: 20px;
+    color: #000000;
+}
+
+
+#hours {
+    font-size: 100px;
+    color: #341677;
+}
+
+#minutes {
+    font-size: 100px;
+    color: #a32f80;
+}
+
+#seconds {
+    font-size: 100px;
+    color: #ff6363;
+}
+
+#clock_back{
+    display: none;
+}
+
+
