@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Time and Work Management</title>
+
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/fullpage_set.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = {
+            log: function () {
+            }
+        };
+    </script>
+    <![endif]-->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+            integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-full.min.js"
+            integrity="sha512-ovjLI1ZcZe6bw+ImQ21r+sv8q/Vwob2kq7tFidK6E1LWfi0T4uobbmpfEU1//a9h9o5Kkt+MnMWf6rWlg0EiMw=="
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script type="text/javascript" src="./javascript/page.js" defer></script>
+    <script type="text/javascript" src="./javascript/todolist.js" defer></script>
+    <script type="text/javascript" src="./javascript/countdown.js" defer></script>
+    <script type="text/javascript" src="./javascript/clock.js" defer></script>
+    <script type="text/javascript" src="./javascript/scroll_effect.js" defer></script>
+
+</head>
+<body>
+
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+</ul>
+
+<div id="fullpage">
+    <div class="section " id="section0">
+        <h1>Your Todolist</h1>
+        <p>Add or delete an item in your todolist! 😉</p>
+        <div id="todo_list">
+            <form>
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Title">
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Description">
+                <input type="button" class="add-row" value="Add Row">
+            </form>
+            <table>
+                <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <button type="button" class="delete-row">Delete Row</button>
+        </div>
+    </div>
+
+
+    <div class="section" id="section1">
+        <h1>Countdown Timer</h1>
+        <p>Enjoy this countdown timer! ⏰</p>
+        <div id="countdown_timer">
+            <div class="countdown" id="timer">
+                <div id="hours"></div>
+                <div id="minutes"></div>
+                <div id="seconds"></div>
+            </div>
+            <div class="countdown">
+                <div>
+                    <label for="hours-input">Hour</label>
+                    <input type="number" id="hours-input" placeholder="hours">
+                    <label for="minutes-input">Minute</label>
+                    <input type="number" id="minutes-input" placeholder="minutes">
+                    <label for="seconds-input">Second</label>
+                    <input type="number" id="seconds-input" placeholder="seconds">
+                </div>
+                <div>
+                    <input type="submit" value="start countdown" id="countdown_start">
+                    <input type="submit" value="stop countdown" id="countdown_stop">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section" id="section2">
+        <h1>Clock</h1>
+        <img id="clock_back" src="./img/clock_back.jpeg" alt="wood structure">
+        <canvas id="canvas" width="400" height="400"></canvas>
+
+    </div>
+</div>
+
+</body>
+</html>
